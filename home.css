@@ -1,0 +1,46 @@
+
+body {
+    margin: 0;
+    min-width: 210px;
+}
+.container {
+    max-width: 1600px;
+    background: pink;
+    height: 250px;
+    border: 1px solid black;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: flex-start;
+    padding: 10px 10px;
+    gap: 26px;
+    box-sizing: border-box;
+}
+.unit {
+    height: 50px;
+    width: 50px;
+    background: green;
+    flex: none;
+}
+.unit:hover {
+    background: blue;
+    cursor: pointer;
+}
+@media screen and (max-width: 1000px){
+    .container{
+        width: auto;
+        height: max-content;
+        gap: 50px;
+
+    }
+}
+@media screen and (max-width:400px) and (min-width:260px){
+    .container{
+        width: auto;
+        height: max-content;
+        gap: 100px;
+    }
+    
+}
+
